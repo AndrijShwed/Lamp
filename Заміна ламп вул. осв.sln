@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32728.150
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Заміна ламп вул. осв", "Заміна ламп вул. осв\Заміна ламп вул. осв.csproj", "{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{47FB3393-6223-4C41-A354-64BBB794C70D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Debug|x86.ActiveCfg = Debug|x86
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Debug|x86.Build.0 = Debug|x86
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Release|x86.ActiveCfg = Release|x86
+		{6A357B50-57E5-4431-A4FB-C38C5C35BEB4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75A3B1F1-9752-43EB-BB7F-721BA507DCB1}
+	EndGlobalSection
+EndGlobal
