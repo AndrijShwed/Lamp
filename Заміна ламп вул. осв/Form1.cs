@@ -156,7 +156,7 @@ namespace Заміна_ламп_вул.осв
 
                     listBox1.Items.Add((pNum) + ") с." + comboBox1.Text + ", вул." + comboBox2.Text +
                         ", опора N " + textBox1.Text + "  дата заміни - " + DateCh.ToShortDateString()+
-                        ". Виробник - " + newProducer+", гарантія -"+newWarranty+" р.");
+                        ". Виробник - " + newProducer+", гарантія -" + newWarranty + " р.");
                     listBox1.Items.Add("     Лампа замінена вперше.");
                     listBox1.Items.Add(new string('-', 85));
                     pNum++;
