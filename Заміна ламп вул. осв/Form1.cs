@@ -648,7 +648,7 @@ namespace Заміна_ламп_вул.осв
             if (counter == 0)
             {
                 yPos = topMargin;
-                e.Graphics.DrawString(result[0], myFont1, Brushes.Black, leftMargin, yPos, new StringFormat());
+                e.Graphics.DrawString(result1[0], myFont1, Brushes.Black, leftMargin, yPos, new StringFormat());
                 counter++;
             }
 
