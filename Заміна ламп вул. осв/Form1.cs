@@ -645,11 +645,11 @@ namespace Заміна_ламп_вул.осв
             int nLines = (int)((e.MarginBounds.Height-myFont1.GetHeight(e.Graphics)) / myFont.GetHeight(e.Graphics));
             int nPages = ((Lines1 - 1) / nLines) + 1;
 
-            if (counter == 0)
+            if (counter1 == 0)
             {
                 yPos = topMargin;
                 e.Graphics.DrawString(result1[0], myFont1, Brushes.Black, leftMargin, yPos, new StringFormat());
-                counter++;
+                counter1++;
             }
 
             while ((i < nLines) && (counter1 < Lines1))
