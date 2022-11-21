@@ -655,7 +655,7 @@ namespace Заміна_ламп_вул.осв
             while ((i < nLines) && (counter1 < Lines1))
             {
 
-                yPos = topMargin + i * myFont.GetHeight(e.Graphics);
+                yPos = topMargin + myFont1.GetHeight(e.Graphics) + i * myFont.GetHeight(e.Graphics);
                 // друк рядка result
                 e.Graphics.DrawString(result1[counter1], myFont, Brushes.Black, leftMargin, yPos, new StringFormat());
                 i++;
