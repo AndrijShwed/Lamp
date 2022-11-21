@@ -20,3 +20,14 @@ C:\Users\1\Source\Repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\
 C:\Users\1\Source\Repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна ламп вул. осв.csproj.CoreCompileInputs.cache
 C:\Users\1\Source\Repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.exe
 C:\Users\1\Source\Repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.pdb
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\bin\x86\Debug\Заміна_ламп_вул.осв.exe.config
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\bin\x86\Debug\Заміна_ламп_вул.осв.exe
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\bin\x86\Debug\Заміна_ламп_вул.осв.pdb
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна ламп вул. осв.csproj.AssemblyReference.cache
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна ламп вул. осв.csproj.SuggestedBindingRedirects.cache
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.Form1.resources
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.Properties.Resources.resources
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна ламп вул. осв.csproj.GenerateResource.cache
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна ламп вул. осв.csproj.CoreCompileInputs.cache
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.exe
+C:\Users\Андрій\source\repos\Lamp\Заміна ламп вул. осв\obj\x86\Debug\Заміна_ламп_вул.осв.pdb
