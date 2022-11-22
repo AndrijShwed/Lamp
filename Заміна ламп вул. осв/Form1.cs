@@ -565,7 +565,7 @@ namespace Заміна_ламп_вул.осв
             int countLines1 = listBox2.Items.Count + 19;
             result1 = new string[countLines1];
             // задаємо текст для друку
-            result1[Lines1] = "             Витяг з бази даних по заміні ламп вуличного освітлення ";
+            result1[Lines1] = "            Витяг з бази даних по заміні ламп вуличного освітлення ";
             Lines1++;
             result1[Lines1] = "  ";
             Lines1++;
