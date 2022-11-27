@@ -477,7 +477,7 @@ namespace Заміна_ламп_вул.осв
             int Year = Convert.ToInt32(textBox2.Text);
             int Month = Convert.ToInt32(comboBox3.Text);
             
-            if (Year > DateTime.Now.Year )
+            if ((Year > DateTime.Now.Year )||(Year < 2022))
             {
                 listBox2.Items.Add("Некоректно введено рік ");
                 return;
