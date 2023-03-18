@@ -52,6 +52,8 @@ namespace Заміна_ламп_вул.осв
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Дата_покупки = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -127,7 +129,7 @@ namespace Заміна_ламп_вул.осв
             // 
             this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(17, 386);
+            this.button1.Location = new System.Drawing.Point(15, 471);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 42);
@@ -317,12 +319,30 @@ namespace Заміна_ламп_вул.осв
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(15, 370);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(287, 29);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Виберіть дату покупки";
+            // 
+            // Дата_покупки
+            // 
+            this.Дата_покупки.Location = new System.Drawing.Point(15, 411);
+            this.Дата_покупки.Name = "Дата_покупки";
+            this.Дата_покупки.Size = new System.Drawing.Size(294, 34);
+            this.Дата_покупки.TabIndex = 34;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(1500, 681);
+            this.Controls.Add(this.Дата_покупки);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listBox2);
@@ -384,6 +404,8 @@ namespace Заміна_ламп_вул.осв
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DateTimePicker Дата_покупки;
     }
 }
 
