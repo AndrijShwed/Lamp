@@ -51,11 +51,11 @@ namespace Заміна_ламп_вул.осв
             comboBox2.Items.Add("Церква-цвинтар");
                     break;
                 case "Рогізно":
-                    comboBox2.Items.Add("Л1");
-                    comboBox2.Items.Add("Л2");
-                    comboBox2.Items.Add("Л3");
-                    comboBox2.Items.Add("Л4");
-                    comboBox2.Items.Add("Л5");
+                    comboBox2.Items.Add("Л1_КТП-290");
+                    comboBox2.Items.Add("Л2_КТП-290");
+                    comboBox2.Items.Add("Л3_КТП-290");
+                    comboBox2.Items.Add("Л3_ТП-51");
+                  
                     //comboBox2.Items.Add("Вузька");
                     break;
                 case "Заболотівці":
