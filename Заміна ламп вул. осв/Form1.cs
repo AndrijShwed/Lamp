@@ -35,20 +35,20 @@ namespace Заміна_ламп_вул.осв
             switch (village)
             {
                 case "Бережниця":
-            comboBox2.Items.Add("Шевченка");
-            comboBox2.Items.Add("Дорошенка");
-            comboBox2.Items.Add("Надбережна");
-            comboBox2.Items.Add("Бандери С.");
-            comboBox2.Items.Add("Рогізнянська");
-            comboBox2.Items.Add("І.Франка");
-            comboBox2.Items.Add("Космонавтів");
-            comboBox2.Items.Add("Нова");
-            comboBox2.Items.Add("Молодіжна");
-            comboBox2.Items.Add("Лісна");
-            comboBox2.Items.Add("Садова");
-            comboBox2.Items.Add("Зелена");
-            comboBox2.Items.Add("Алея Неб.Сотні");
-            comboBox2.Items.Add("Церква-цвинтар");
+                  comboBox2.Items.Add("Шевченка");
+                  comboBox2.Items.Add("Дорошенка");
+                  comboBox2.Items.Add("Надбережна");
+                  comboBox2.Items.Add("Бандери С.");
+                  comboBox2.Items.Add("Рогізнянська");
+                  comboBox2.Items.Add("І.Франка");
+                  comboBox2.Items.Add("Космонавтів");
+                  comboBox2.Items.Add("Нова");
+                  comboBox2.Items.Add("Молодіжна");
+                  comboBox2.Items.Add("Лісна");
+                  comboBox2.Items.Add("Садова");
+                  comboBox2.Items.Add("Зелена");
+                  comboBox2.Items.Add("Алея Неб.Сотні");
+                  comboBox2.Items.Add("Церква-цвинтар");
                     break;
                 case "Рогізно":
                     comboBox2.Items.Add("Шевченка");
