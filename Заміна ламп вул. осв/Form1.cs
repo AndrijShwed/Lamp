@@ -51,12 +51,12 @@ namespace Заміна_ламп_вул.осв
                   comboBox2.Items.Add("Церква-цвинтар");
                     break;
                 case "Рогізно":
-                    comboBox2.Items.Add("Шевченка");
-                    comboBox2.Items.Add("І.Франка");
-                    comboBox2.Items.Add("Лесі Українки");
-                    comboBox2.Items.Add("Зелена");
-                    comboBox2.Items.Add("Садова");
-                    comboBox2.Items.Add("Вузька");
+                    comboBox2.Items.Add("Л1_КТП-290");
+                    comboBox2.Items.Add("Л2_КТП-290");
+                    comboBox2.Items.Add("Л3_КТП-290");
+                    comboBox2.Items.Add("Л3_ТП-51");
+                  
+                    //comboBox2.Items.Add("Вузька");
                     break;
                 case "Заболотівці":
                     comboBox2.Items.Add("Миру");
@@ -88,6 +88,7 @@ namespace Заміна_ламп_вул.осв
             public string SupportNumb;
             public string Producer;
             public DateTime Date;
+            public DateTime DateOfPurchase;
             public int Warranty;
                                   
         }
@@ -109,7 +110,7 @@ namespace Заміна_ламп_вул.осв
             InputFileCountLamp();
 
             if ((textBox1.TextLength == 0) || (textBox3.TextLength == 0) || (textBox4.TextLength == 0)  ||
-                (comboBox1.SelectedItem == null) || (comboBox2.SelectedItem == null))
+                (comboBox1.SelectedItem == null) || (comboBox2.SelectedItem == null)|| (Дата_покупки.Text == null))
             {
                 return;
             }
@@ -121,6 +122,7 @@ namespace Заміна_ламп_вул.осв
                 string newVillage = comboBox1.Text;
                 string newStreet = comboBox2.Text;
                 string newProducer = textBox4.Text;
+                DateTime newDateOfPurchase = Convert.ToDateTime(Дата_покупки.Text);
                 int newWarranty;
                 if(Int32.TryParse((textBox3.Text), out int j))
                 {
@@ -144,6 +146,7 @@ namespace Заміна_ламп_вул.осв
                         SupportNumb = newSupportNumb,
                         Date = DateCh,
                         Producer = newProducer,
+                        DateOfPurchase = newDateOfPurchase,
                         Warranty = newWarranty
 
                     }) ;
@@ -155,9 +158,10 @@ namespace Заміна_ламп_вул.осв
                     });
 
                     listBox1.Items.Add((pNum) + ") с." + comboBox1.Text + ", вул." + comboBox2.Text +
-                        ", опора N " + textBox1.Text + "  дата заміни - " + DateCh.ToShortDateString()+
-                        ". Виробник - " + newProducer+", гарантія -" + newWarranty + " р.");
-                    listBox1.Items.Add("     Лампа замінена вперше.");
+                        ", опора N " + textBox1.Text + "  дата заміни - " + DateCh.ToShortDateString() +
+                        ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
+                        
+                    listBox1.Items.Add("     Лампа замінена вперше. Дата покупки - " + newDateOfPurchase.ToShortDateString() + " р.");
                     listBox1.Items.Add(new string('-', 85));
                     pNum++;
                 }
@@ -167,7 +171,7 @@ namespace Заміна_ламп_вул.осв
                     {
                         
 
-                        DateTime dateOld = item.Date;
+                        DateTime dateOld = item.DateOfPurchase;
 
                         DateTime dateOldWarranty = dateOld.AddYears(item.Warranty);
                         
@@ -196,6 +200,7 @@ namespace Заміна_ламп_вул.осв
                                     SupportNumb = newSupportNumb,
                                     Producer = newProducer,
                                     Date = DateCh,
+                                    DateOfPurchase = newDateOfPurchase,
                                     Warranty = newWarranty
 
                                 });
@@ -208,10 +213,11 @@ namespace Заміна_ламп_вул.осв
 
                                 listBox1.Items.Add((pNum) + ") с." + comboBox1.Text + ", вул." +
                                     comboBox2.Text + ", опора N " + textBox1.Text + " дата заміни - " +
-                                    DateCh.ToShortDateString()+ ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
+                                    DateCh.ToShortDateString() + ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
+                                      
                                 listBox1.Items.Add("     Лампа, яку замінили, на гарантії, залишилось - " + days +
-                                    " днів, встановлена - " + dateOld.ToShortDateString() +
-                                    " р." );
+                                    " днів, встановлена - " + dateOld.ToShortDateString() + " р." );
+                                listBox1.Items.Add("Дата покупки - " + newDateOfPurchase.ToShortDateString() + " р.");
                                 listBox1.Items.Add(new string('-', 85));
                                 pNum++; 
                                 break;
@@ -226,6 +232,7 @@ namespace Заміна_ламп_вул.осв
                                     SupportNumb = newSupportNumb,
                                     Producer = newProducer,
                                     Date = DateCh,
+                                    DateOfPurchase = newDateOfPurchase,
                                     Warranty = newWarranty
                                 });
 
@@ -237,8 +244,9 @@ namespace Заміна_ламп_вул.осв
 
                                 listBox1.Items.Add((pNum) + ") с." + comboBox1.Text + ", вул." +
                                     comboBox2.Text + ", опора N " + textBox1.Text + ", дата заміни - " +
-                                    DateCh.ToShortDateString()+ ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
-                                listBox1.Items.Add("     Гарантія у заміненої лампи закінчилась");
+                                    DateCh.ToShortDateString() + ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
+                                     
+                                listBox1.Items.Add("     Гарантія у заміненої лампи закінчилась. Дата покупки - " + newDateOfPurchase.ToShortDateString() + " р.");
                                 listBox1.Items.Add(new string('-', 85));
                                 pNum++;
                                break;
@@ -246,12 +254,13 @@ namespace Заміна_ламп_вул.осв
                             
                         }
                         if (k == lamps.Count)
-                        {             
+                        {
 
                             listBox1.Items.Add((pNum) + ") с." + comboBox1.Text + ", вул." +
                                 comboBox2.Text + ", опора N " + textBox1.Text + ", дата заміни - " +
-                               DateCh.ToShortDateString()+ ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
-                            listBox1.Items.Add("     Лампа замінена вперше.");
+                               DateCh.ToShortDateString() + ". Виробник - " + newProducer + ", гарантія -" + newWarranty + " р.");
+                                
+                            listBox1.Items.Add("     Лампа замінена вперше. Дата покупки - " + newDateOfPurchase.ToShortDateString() + " р.");
                             listBox1.Items.Add(new string('-', 85));
                             n = 1;
                             pNum++;
@@ -272,6 +281,7 @@ namespace Заміна_ламп_вул.осв
                         SupportNumb = newSupportNumb,
                         Producer = newProducer,
                         Date = DateCh,
+                        DateOfPurchase = newDateOfPurchase,
                         Warranty = newWarranty
                     });
                     n = 0;
@@ -298,6 +308,7 @@ namespace Заміна_ламп_вул.осв
                     sw.WriteLine(item.SupportNumb);
                     sw.WriteLine(item.Date);
                     sw.WriteLine(item.Warranty);
+                    sw.WriteLine(item.DateOfPurchase);
                     sw.WriteLine(item.Producer);
 
                 }
@@ -698,6 +709,8 @@ namespace Заміна_ламп_вул.осв
                         line = sr.ReadLine();
                         int Warranty1 = int.Parse(line);
                         line = sr.ReadLine();
+                        DateTime DateOfPurchase = Convert.ToDateTime(line);
+                        line = sr.ReadLine();
                         string newProducer1 = line;
                    
 
@@ -751,6 +764,8 @@ namespace Заміна_ламп_вул.осв
                 }
             }
         }
+
+       
     }
     
 }
