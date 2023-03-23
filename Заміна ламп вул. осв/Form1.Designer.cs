@@ -54,7 +54,7 @@ namespace Заміна_ламп_вул.осв
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.Дата_покупки = new System.Windows.Forms.DateTimePicker();
+            this.Дата_Покупки = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -329,12 +329,12 @@ namespace Заміна_ламп_вул.осв
             this.label9.TabIndex = 33;
             this.label9.Text = "Виберіть дату покупки";
             // 
-            // Дата_покупки
+            // Дата_Покупки
             // 
-            this.Дата_покупки.Location = new System.Drawing.Point(15, 411);
-            this.Дата_покупки.Name = "Дата_покупки";
-            this.Дата_покупки.Size = new System.Drawing.Size(294, 34);
-            this.Дата_покупки.TabIndex = 34;
+            this.Дата_Покупки.Location = new System.Drawing.Point(15, 420);
+            this.Дата_Покупки.Name = "Дата_Покупки";
+            this.Дата_Покупки.Size = new System.Drawing.Size(315, 34);
+            this.Дата_Покупки.TabIndex = 34;
             // 
             // Form1
             // 
@@ -342,7 +342,7 @@ namespace Заміна_ламп_вул.осв
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(1500, 681);
-            this.Controls.Add(this.Дата_покупки);
+            this.Controls.Add(this.Дата_Покупки);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -407,7 +407,7 @@ namespace Заміна_ламп_вул.осв
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker Дата_покупки;
+        private System.Windows.Forms.DateTimePicker Дата_Покупки;
     }
 }
 
